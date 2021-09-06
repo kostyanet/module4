@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>JavaEE Sandbox</display-name>
+    <servlet>
+        <servlet-name>stat-servlet</servlet-name>
+        <servlet-class>servlet.StatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>stat-servlet</servlet-name>
+        <url-pattern>/stats</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>race-servlet</servlet-name>
+        <servlet-class>servlet.RaceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>race-servlet</servlet-name>
+        <url-pattern>/race/*</url-pattern>
+    </servlet-mapping>
+</web-app>

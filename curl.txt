@@ -1,0 +1,7 @@
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"horsesTotal":9,"betHorsePosition":3}' \
+  http://localhost:8008/race/start
+
+curl http://localhost:8008/stats
+curl http://localhost:8008/race/3
