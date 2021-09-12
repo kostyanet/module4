@@ -14,10 +14,18 @@ import java.util.function.Consumer;
 
 public class RaceService {
     private static final List<String> raceResult = new ArrayList<>();
+    private static RaceService service;
     private final RaceDao raceDao = new RaceDao();
     private Bet bet;
 
-    public RaceService() {
+    public static RaceService getInstance() {
+        if(service == null) {
+            service = new RaceService();
+        }
+        return service;
+    }
+
+    private RaceService() {
     }
 
     public void run(Bet bet) {

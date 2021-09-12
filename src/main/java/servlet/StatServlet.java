@@ -14,7 +14,7 @@ import java.io.PrintWriter;
  * и информации о месте лошади, на которую поставил пользователь.
  */
 public class StatServlet extends HttpServlet {
-    private final RaceService service = new RaceService();
+    private final RaceService service = RaceService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {

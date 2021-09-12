@@ -20,7 +20,7 @@ import java.io.PrintWriter;
  */
 public class RaceServlet extends HttpServlet {
     private final static String NUM_REG_EXP = "/\\d+";
-    private final RaceService service = new RaceService();
+    private final RaceService service = RaceService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
