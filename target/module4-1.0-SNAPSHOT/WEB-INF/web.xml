@@ -22,13 +22,12 @@
         <url-pattern>/race/*</url-pattern>
     </servlet-mapping>
 
-<!--    <servlet>-->
-<!--        <servlet-name>statistic-servlet</servlet-name>-->
-<!--        <servlet-class>servlet.StatisticServlet</servlet-class>-->
-<!--    </servlet>-->
-
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>statistic-servlet</servlet-name>-->
-<!--        <url-pattern>/statistics</url-pattern>-->
-<!--    </servlet-mapping>-->
+    <servlet>
+        <servlet-name>race-start-servlet</servlet-name>
+        <servlet-class>servlet.RaceStartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>race-start-servlet</servlet-name>
+        <url-pattern>/race/start</url-pattern>
+    </servlet-mapping>
 </web-app>

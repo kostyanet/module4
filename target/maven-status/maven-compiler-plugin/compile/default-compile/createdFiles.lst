@@ -2,8 +2,8 @@ util/HibernateUtil.class
 entity/RaceStat.class
 entity/RaceReport.class
 servlet/RaceServlet.class
+servlet/RaceStartServlet.class
 servlet/StatServlet.class
-util/HttpUtil.class
 service/HorseRun.class
 dao/RaceDao.class
 service/RaceService.class
